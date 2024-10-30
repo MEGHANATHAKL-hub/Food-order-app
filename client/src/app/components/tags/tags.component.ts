@@ -13,6 +13,7 @@ import { NgFor, NgIf } from '@angular/common';
 })
 export class TagsComponent {
   @Input() foodPageTags?:string[];
+  @Input() justifyContent?:string = 'center'
   tags:Tag[] = []
   constructor(private fs:FoodService) { }
   ngOnInit() {

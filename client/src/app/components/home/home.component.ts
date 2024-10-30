@@ -8,6 +8,7 @@ import { ActivatedRoute, RouterModule } from '@angular/router';
 import { SearchComponent } from '../search/search.component';
 import { FormsModule } from '@angular/forms';
 import { TagsComponent } from '../tags/tags.component';
+import { NotFoundComponent } from '../not-found/not-found.component';
 
 @Component({
   selector: 'app-home',
@@ -24,6 +25,7 @@ import { TagsComponent } from '../tags/tags.component';
     CurrencyPipe, 
     FormsModule,
     RouterModule,
+    NotFoundComponent
   ],
   providers: [StarRatingConfigService],
   templateUrl: './home.component.html',
