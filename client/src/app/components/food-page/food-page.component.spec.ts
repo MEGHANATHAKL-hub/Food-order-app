@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { FoodPageComponent } from './food-page.component';
+import { ActivatedRoute, provideRouter, RouterModule } from '@angular/router';
 
 describe('FoodPageComponent', () => {
   let component: FoodPageComponent;
@@ -8,7 +9,13 @@ describe('FoodPageComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [FoodPageComponent]
+      imports: [
+        FoodPageComponent,
+        // RouterModule.forRoot([]) 'This is for 
+      ],
+      providers: [
+        provideRouter([]),
+      ]
     })
     .compileComponents();
 
