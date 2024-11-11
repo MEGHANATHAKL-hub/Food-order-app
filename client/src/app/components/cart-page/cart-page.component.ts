@@ -5,6 +5,9 @@ import { CartItem } from '../../shared/models/CartItem';
 import { CurrencyPipe, NgFor, NgIf } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { NotFoundComponent } from '../not-found/not-found.component';
+import { HighlightDirectiveDirective } from '../../directive/highlight-directive.directive';
+import { AppNotDirective } from '../../directive/app-not.directive';
+import { CapitalizePipe } from '../../pipes/capitalize.pipe';
 
 @Component({
   selector: 'app-cart-page',
@@ -13,8 +16,11 @@ import { NotFoundComponent } from '../not-found/not-found.component';
     NgIf,
     NgFor,
     CurrencyPipe,
+    CapitalizePipe,
     RouterModule,
-    NotFoundComponent
+    NotFoundComponent,
+    HighlightDirectiveDirective,
+    AppNotDirective
   ],
   templateUrl: './cart-page.component.html',
   styleUrl: './cart-page.component.scss'

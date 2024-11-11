@@ -128,7 +128,7 @@ fdescribe('CartPageComponent', () => {
     expect(totalPrice.textContent).toContain('$10.00');
   })
 
-  it('Should have link to proceed to checkout', ()=> {
+  it('Should have link to proceed to checkout', () => {
     component.cart = { items: [], totalPrice: 10, totalCount: 1 };
     let food:Foods = {
       id: 1,
